@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx nodemon --exec npm run offline",
-    "offline": "sls offline start --host 0.0.0.0"
+    "offline": "npx sls offline start --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
