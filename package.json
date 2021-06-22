@@ -4,17 +4,24 @@
   "description": "Project using server less framework and nodes stream, skills: s3, sqs, serverless, localstack and docker.",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon --exec npm run offline",
+    "offline": "sls offline start --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/devodla/demo07-tooling.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Huillca, Reynaldo",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/devodla/demo07-tooling/issues"
   },
-  "homepage": "https://github.com/devodla/demo07-tooling#readme"
+  "homepage": "https://github.com/devodla/demo07-tooling#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "serverless": "^2.48.0",
+    "serverless-offline": "^7.0.0"
+  }
 }
