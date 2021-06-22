@@ -4,7 +4,7 @@
   "description": "Project using server less framework and nodes stream, skills: s3, sqs, serverless, localstack and docker.",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx sls invoke test --path test",
     "start": "npx nodemon --exec npm run offline",
     "offline": "npx sls offline start --host 0.0.0.0"
   },
@@ -22,6 +22,7 @@
   "devDependencies": {
     "nodemon": "^2.0.7",
     "serverless": "^2.48.0",
+    "serverless-mocha-plugin": "^1.12.0",
     "serverless-offline": "^7.0.0"
   }
 }
